@@ -1,0 +1,46 @@
+
+.about-context {
+    background: #d9d9d9;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.about-ul {
+    padding-left: 2rem;
+    list-style: disc;
+}
+
+.hide-disc {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-two-column {
+    display: flex;
+    gap: 1rem;
+}
+
+.about-two-column-context {
+    background: #d9d9d9;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .about-two-column {
+        flex-wrap: wrap;
+    }
+
+    .about-two-column-context {
+        width: 100%;
+    }
+}
+
+

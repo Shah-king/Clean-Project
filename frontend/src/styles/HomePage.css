@@ -1,0 +1,144 @@
+
+body {
+    background-color: #e3f9ff;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+}
+
+.page {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bolder;
+    line-height: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}   
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.button {
+  padding: 0.5rem 2rem;
+  color: white;
+  background-color: #588AFF;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #749cf7;
+  cursor: pointer;
+}
+
+.home-section1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+/* 
+
+    Above is section 1, title, subtile and report button 
+
+*/
+
+.texts {
+  line-height: 1.5rem;
+}
+
+.title23 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.home-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.home-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.home-cards img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.home-section2 {
+  display:flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 2rem;
+  background-color: #d9d9d9;
+}
+
+/*
+
+    Above is section 2,
+    
+*/
+  
+@media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+  
+    .subtitle {
+      font-size: 1.2rem;
+      padding: 1rem;
+    }
+    
+    .home-section1 {
+      padding: 1.5rem;
+    }
+
+    .home-section2 {
+      padding: 1rem;
+      margin: 0.5rem;
+    }
+  
+    .home-title2 {
+      font-size: 1.2rem;
+    }
+  
+    .home-cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .home-cards {
+      width: 70%;
+      margin-bottom: 1rem;
+    }
+
+    img {
+        size-adjust: auto;
+    }
+}

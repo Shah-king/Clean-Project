@@ -1,0 +1,8 @@
+.custom-button {
+  color: #000;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+  

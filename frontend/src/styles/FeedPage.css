@@ -1,0 +1,267 @@
+.feed-page {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%; /* full width but max constrained */
+  box-sizing: border-box;
+}
+
+.feed-container {
+  display: flex;
+  gap: 20px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  min-width: 0;
+  flex-wrap: nowrap;
+}
+
+.feed-img {
+  flex: 0 0 150px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #ccc;
+  max-height: 150px;
+  min-width: 150px;
+}
+
+.feed-img img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.feed-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
+}
+
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.title-location-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.title2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 800px;
+}
+
+.location {
+  font-size: 0.9rem;
+  color: #555;
+  white-space: nowrap;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+  min-width: 90px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.bg-green {
+  background-color: #22c55e;
+}
+
+.bg-yellow {
+  background-color: #eab308;
+}
+
+.bg-gray {
+  background-color: #6b7280;
+}
+
+.description {
+  margin-top: 10px;
+  color: #444;
+  word-wrap: break-word;
+}
+
+.feed-author-info {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feed-author-info p {
+  margin: 0;
+}
+
+.feed-author-info a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.feed-author-info a:hover {
+  text-decoration: underline;
+}
+
+.feed-footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.feed-post-time {
+  font-size: 0.85rem;
+  color: #666;
+  white-space: nowrap;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.buttons button,
+.buttons a button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.buttons button.detail {
+  background-color: #2563eb;
+  color: white;
+}
+
+.buttons button.detail:hover {
+  background-color: #1d4ed8;
+}
+
+.accept-task {
+  background-color: #16a34a;
+  color: white;
+}
+
+.accept-task:hover {
+  background-color: #15803d;
+}
+
+.complete-task {
+  background-color: #db2777;
+  color: white;
+}
+
+.complete-task:hover {
+  background-color: #be185d;
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .feed-page {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .feed-container {
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .feed-img {
+    flex: none;
+    width: 100%;
+    max-height: 250px;
+    min-width: auto;
+  }
+
+  .feed-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .feed-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title-location-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .title2 {
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .location {
+    white-space: normal;
+    font-style: italic;
+  }
+
+  .status {
+    min-width: auto;
+    padding: 6px 12px;
+    margin-top: 8px;
+    font-size: 1rem;
+  }
+
+  .feed-author-info {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .feed-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .feed-post-time {
+    white-space: normal;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttons button,
+  .buttons a button {
+    width: 100%;
+    white-space: normal;
+  }
+}
