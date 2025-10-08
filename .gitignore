@@ -1,5 +1,6 @@
 # Ignore Firebase admin key
 backend/firebase-admin-sdk/serviceAccountKey.json
+frontend/src/firebase.js
 
 # Ignore all env files
 .env
